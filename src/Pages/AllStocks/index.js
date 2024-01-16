@@ -1,8 +1,5 @@
-import Header from '../Header';
 import Table from '../Table_data';
 import Search from '../SearchBar';
-import NavigationButtons from '../NavigationBut';
-import Sidebar from '../Sidebar';
 import HeadPaginationButt from '../../Container/HeaderPagiButt';
 import { useState } from 'react';
 

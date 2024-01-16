@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
-import Header from '../Header';
 import Search from '../SearchBar';
 import Table from '../Table_data';
-import Sidebar from '../Sidebar';
-import NavigationButtons from '../NavigationBut';
 import HeadPaginationButt from '../../Container/HeaderPagiButt';
 
 const Belmont = () => {
