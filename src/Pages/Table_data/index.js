@@ -15,7 +15,8 @@ const Table = ({ page, LocationName, searchValue, selectedCategory  }) => {
                 // const apiUrl = LocationName
                 //     ? `http://localhost:5000/all?LocationName=${LocationName}`
                 //     : `http://localhost:5000/all`;
-                let apiUrl = `http://localhost:5000/all`;
+                // let apiUrl = `http://localhost:5000/all`;
+                let apiUrl = `https://my-server-u7xs.onrender.com/all`;
 
                 if (LocationName) {
                     apiUrl += `?LocationName=${LocationName}`;
