@@ -1,0 +1,28 @@
+.sidebar {
+    background-color: #E8E8E8;
+    width: 300px;
+    height: 100vmax;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    z-index: 1000px;
+    transition: .5s ease;
+    /* margin-left: -300px; */
+    
+}
+.menu_icons {
+    position: inherit;
+    top: 0px;
+    left: 0px;
+    /* background-color: royalblue; */
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 310px;
+    color: #ff6f61;
+    transition: .5s ease;
+}
+.active {
+    left: 0px;
+}
+
