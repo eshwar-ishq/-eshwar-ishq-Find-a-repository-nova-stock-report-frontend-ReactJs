@@ -9,43 +9,6 @@ const Table = ({ page, LocationName, searchValue, selectedCategory  }) => {
 
     console.log(`In table component for ${LocationName || 'All Stocks'} - Page: ${page}`);
     let initialPage = 1;
-    // console.log("in table component",page);
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const apiUrl = LocationName
-    //                 ? `http://localhost:5000/all?LocationName=${LocationName}&page=${page}&limit=30`
-    //                 : `http://localhost:5000/all?page=${page}&limit=30`;
-
-    //             console.log("API URL:", apiUrl);
-
-    //             const response = await fetch(apiUrl);
-    //             const data = await response.json();
-
-    //             console.log("Fetched Data:", data)
-
-    //             const filteredData = data.filter(item =>{
-    //                 const categoryValue = item[selectedCategory];
-    //                 return (
-    //                     categoryValue &&
-    //                     categoryValue.toLowerCase().includes(searchValue.toLowerCase())
-    //                 );
-    //                 });
-
-    //             setAllData(filteredData);
-
-    //         } catch (err) {
-    //             console.log('Error fetching data', err);
-    //         }
-    //     };
-    //     fetchData();
-    // }, [LocationName, page, searchValue, selectedCategory]); // Empty dependency array ensures this effect runs once on component mount
-
-    // const filteredData = allData.filter(item => {
-    //     return item[selectedCategory].toLowerCase().includes(searchValue.toLowerCase())
-    // });
-    // console.log(filteredData);
     useEffect(() => {
         const fetchData = async () => {
             try {
