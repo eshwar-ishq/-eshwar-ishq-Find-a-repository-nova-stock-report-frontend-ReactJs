@@ -15,8 +15,8 @@ const Table = ({ page, LocationName, searchValue, selectedCategory  }) => {
                 // const apiUrl = LocationName
                 //     ? `http://localhost:5000/all?LocationName=${LocationName}`
                 //     : `http://localhost:5000/all`;
-                // let apiUrl = `http://localhost:5000/all`;
-                let apiUrl = `https://my-server-u7xs.onrender.com/all`;
+                let apiUrl = `http://localhost:5000/all`;
+                // let apiUrl = `https://my-server-u7xs.onrender.com/all`;
 
                 if (LocationName) {
                     apiUrl += `?LocationName=${LocationName}`;
@@ -44,6 +44,11 @@ const Table = ({ page, LocationName, searchValue, selectedCategory  }) => {
             // Apply filtering logic on the entire dataset
             const filteredData = allData.filter(item => {
                 const categoryValue = item[selectedCategory];
+
+                if (selectedCategory === 'Quantity' && typeof categoryValue === 'number') {
+                    // Convert quantity to string before filtering
+                    return categoryValue.toString().toLowerCase().includes(searchValue.toLowerCase());
+                  }
                 return (
                     categoryValue &&
                     categoryValue.toLowerCase().includes(searchValue.toLowerCase())
