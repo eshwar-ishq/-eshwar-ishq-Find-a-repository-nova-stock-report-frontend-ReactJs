@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { FaHome } from "react-icons/fa";
 import './Error.css'
 
@@ -14,7 +14,7 @@ const Error = () => {
           Sorry, an error has occured, Requested page not found!
         </div>
         <div class="error-actions">
-          <NavLink to="/"><button><span> <FaHome /></span>Take Me Home </button> </NavLink>
+          <Link to="/"><button><span> <FaHome /></span>Take Me Home </button> </Link>
         </div>
       </div>
     </div>
