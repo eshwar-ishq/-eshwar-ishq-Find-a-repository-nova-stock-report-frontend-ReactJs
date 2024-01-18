@@ -29,7 +29,8 @@ const Table = ({ page, LocationName, searchValue, selectedCategory  }) => {
 
                 console.log("Fetched Data:", data);
 
-                setAllData(data);
+                // setAllData(data);
+                setAllData(Array.isArray(data) ? data : []);
 
             } catch (err) {
                 console.log('Error fetching data', err);

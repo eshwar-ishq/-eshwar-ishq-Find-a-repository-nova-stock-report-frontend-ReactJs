@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    text-align: center;
+}
+.error-actions span {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.error-actions button {
+    cursor: pointer;
+    background-color: #04AA6D;
+    /* Green */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}

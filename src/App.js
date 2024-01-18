@@ -7,6 +7,7 @@ import Belmont from './Pages/Belmont';
 import Richmond from './Pages/Richmond';
 import Haridwar from './Pages/Hariwdar';
 import Hyderabad from './Pages/Hyderabad';
+import Error from './Pages/ErrorPage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ function App() {
         <Route  path='/richmond' element={<Richmond />}/>
         <Route  path='/haridwar' element={<Haridwar />}/>
         <Route  path='/hyderabad' element={<Hyderabad />}/>
+        <Route  path='*' element={<Error />}/>
       </Routes>
     </BrowserRouter>
     
