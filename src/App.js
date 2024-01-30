@@ -21,7 +21,7 @@ function App() {
         <Route  path='/richmond' element={<Richmond />}/>
         <Route  path='/haridwar' element={<Haridwar />}/>
         <Route  path='/hyderabad' element={<Hyderabad />}/>
-        <Route  path='*' element={<Error />}/>
+        <Route  path="*" element={<Error />}/>
       </Routes>
     </BrowserRouter>
     
